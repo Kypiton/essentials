@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './CoreConcept.css';
 
 export default function CoreConcept({ image, title, description }) {
@@ -9,3 +11,9 @@ export default function CoreConcept({ image, title, description }) {
     </li>
   );
 }
+
+CoreConcept.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};

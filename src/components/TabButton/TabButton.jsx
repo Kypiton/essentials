@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function TabButton({ children, onSelect, className }) {
   return (
     <li>
@@ -7,3 +9,9 @@ export default function TabButton({ children, onSelect, className }) {
     </li>
   );
 }
+
+TabButton.propTypes = {
+  children: PropTypes.element.isRequired,
+  onSelect: PropTypes.func,
+  className: PropTypes.string,
+};
