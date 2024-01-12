@@ -1,0 +1,10 @@
+name: Essentials Workflow
+on: workflow_dispatch
+
+jobs:
+  prints:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print to console
+        run: echo Hello GH Actions!
+  
